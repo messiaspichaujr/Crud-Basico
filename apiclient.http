@@ -1,0 +1,27 @@
+GET http://localhost:3000/aluno HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3000/aluno HTTP/1.1
+Content-Type: application/json
+
+{
+    "matr_aluno": 3,
+    "nome_aluno": "Yasmin cittadin",
+    "email_aluno": "yasmincittadin@icloud.com"
+}
+###
+
+PUT http://localhost:3000/aluno/3 HTTP/1.1
+Content-Type: application/json
+
+{
+
+    "nome_aluno": "Yasmin Pichau",
+    "email_aluno": "yasminpichau@icloud.com"
+}
+###
+DELETE  http://localhost:3000/aluno/3 HTTP/1.1
+Content-Type: application/json
+
+###
