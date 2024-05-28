@@ -1,7 +1,7 @@
 exercicios - api crud - provas - processo da n2
 
 
-abre o vscode e instala os dois pacote:
+abre o vscode e instala os quatro pacote:
 
 1ºpacote: npm install --save mysql2
 2ºpacote: npm install express
