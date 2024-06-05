@@ -1,27 +1,41 @@
-GET http://localhost:3000/aluno HTTP/1.1
-Content-Type: application/json
+//LISTA TODOS OS CPF'S
+GET http://localhost:3000/usuario HTTP/1.1 
+Content-Type: application/json 
+### 
+//FUNÇÃO PARA LISTAR INFORMAÇÕES DO CPF 
+GET http://localhost:3000/usuario/1377626903 HTTP/1.1 
+Content-Type: application/json 
 ###
-
-POST http://localhost:3000/aluno HTTP/1.1
-Content-Type: application/json
-
-{
-    "matr_aluno": 3,
-    "nome_aluno": "Yasmin cittadin",
-    "email_aluno": "yasmincittadin@icloud.com"
-}
-###
-
-PUT http://localhost:3000/aluno/3 HTTP/1.1
+//FUNÇÃO PARA CRIAR MAIS UM USUÁRIO
+POST http://localhost:3000/usuario HTTP/1.1
 Content-Type: application/json
 
 {
-
-    "nome_aluno": "Yasmin Pichau",
-    "email_aluno": "yasminpichau@icloud.com"
+    "cpf_user": "...",
+    "nome_user": "...", 
+    "email_user": "..."  
 }
-###
-DELETE  http://localhost:3000/aluno/3 HTTP/1.1
+### 
+//EDITAR INFORMAÇÕES DO USUARIO escolhido /usuario/...
+PUT http://localhost:3000/usuario/2147483647 HTTP/1.1
+Content-Type: application/json
+ 
+{
+    "nome_user": "yasmin cittadin",
+    "email_user": "yasmin@icloud.com"
+}
+### 
+//EDITAR INFORMAÇÕES DO USUARIO escolhido /usuario/... Altera Somente o CPF
+PUT http://localhost:3000/usuario-cpf/1377626903 HTTP/1.1
+Content-Type: application/json
+ 
+{
+    "cpf_user": "01377626903"
+}
+### 
+//DELETAR O USUARIO escolhido /usuario/...
+DELETE  http://localhost:3000/usuario/ HTTP/1.1
 Content-Type: application/json
 
-###
+
+
