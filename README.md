@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/15587615/README.md)
 ## Projeto API CRUD
 
 Este projeto é uma API básica para operações de Create, Read, Update e Delete (CRUD). É construído utilizando Node.js e organizado em vários componentes chave para garantir modularidade e escalabilidade.
